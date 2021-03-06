@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TeensTree</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+  <header>
+<style>
+
+.navbar {
+    float:right;
+    overflow: hidden;
+    background-color: grey;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    border-radius: 3px;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .logo img         {
+    float:left;
+    width:50px;
+    height:auto;
+  }
+  .logo span   {
+    display: inline-block;
+  }
+  .main{
+      max-width:1100px;
+      margin:auto
+  }
+
+</style>
+        <div class="navbar">
+            <a href="home.html" >Home</a>
+               <a href="AboutUs.html">About Us</a>
+        </div>
+    </header>
+<style>
+ .h1{
+    position:center;
+    top: 30%;
+    right: 5%;
+    Left: 50%;
+     text-align: absolute;
+    color: brown;
+    font-size: 40px;
+    font-weight: 500;
+  
+     } 
+  .p1{ text-align: absolute;
+    color: black;
+    font-size: 40px;
+    font-weight: 100;
+     } 
+</style>
+ <div class="main">
+<div class="title-left">
+<center>
+<h1>K L University Gym</h1>
+<p1>K L University provides a well equipped gym for the students</p1>
+</center>
+<h1>Benefits of exercise</h1>
+
+<p1>People who exercise regularly tend to do so because it gives them an enormous sense of well-being. They feel more energetic throughout the day, sleep better at night, have sharper memories, and feel more relaxed and positive about themselves and their lives. And it’s also a powerful medicine for many common mental health challenges.
+
+Regular exercise can have a profoundly positive impact on depression, anxiety, and ADHD. It also relieves stress, improves memory, helps you sleep better, and boosts your overall mood. And you don’t have to be a fitness fanatic to reap the benefits. Research indicates that modest amounts of exercise can make a real difference. No matter your age or fitness level, you can learn to use exercise as a powerful tool to deal with mental health problems, improve your energy and outlook, and get more out of life.</p>
+ <h1> Exercise and depression </h1>
+ <p1>
+ Studies show that exercise can treat mild to moderate depression as effectively as antidepressant medication—but without the side-effects, of course. As one example, a recent study done by the Harvard T.H. Chan School of Public Health found that running for 15 minutes a day or walking for an hour reduces the risk of major depression by 26%. In addition to relieving depression symptoms, research also shows that maintaining an exercise schedule can prevent you from relapsing.
+
+Exercise is a powerful depression fighter for several reasons. Most importantly, it promotes all kinds of changes in the brain, including neural growth, reduced inflammation, and new activity patterns that promote feelings of calm and well-being. It also releases endorphins, powerful chemicals in your brain that energize your spirits and make you feel good. Finally, exercise can also serve as a distraction, allowing you to find some quiet time to break out of the cycle of negative thoughts that feed depression.
+  </p1>
+  <h1> Exercise and Anxiety </h1>
+  <p1>
+  Exercise is a natural and effective anti-anxiety treatment. It relieves tension and stress, boosts physical and mental energy, and enhances well-being through the release of endorphins. Anything that gets you moving can help, but you’ll get a bigger benefit if you pay attention instead of zoning out.
+
+Try to notice the sensation of your feet hitting the ground, for example, or the rhythm of your breathing, or the feeling of the wind on your skin. By adding this mindfulness element—really focusing on your body and how it feels as you exercise—you’ll not only improve your physical condition faster, but you may also be able to interrupt the flow of constant worries running through your head.</p1>
+   </div>
+   
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Join the Gym</h2>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                             <div class="form-group">
+                              <p1>&nbsp&nbsp&nbsp&nbsp Gender</p1>
+                                 <label for="text"><i class="zmdi zmdi-account material-icons-name "></i></label>
+                              <select id="gender" name="gender">
+                              <option value="select">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp select</option>
+                               <option value="Male">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Male</option>
+                               <option value="Female">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp Female</option>
+                               <option value="None">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp Prefer not to say</option>
+                                 </select>
+                                </div>
+                            <div class="form-group">
+                            <p1>&nbsp&nbsp&nbsp&nbsp Choose timings</p1>
+                                 <label for="time"><i class="zmdi zmdi-calendar"></i></label>
+                              <select id="time" name="time">
+                              <option value="select">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp select</option>
+                               <option value="5 PM-6 PM">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp 5PM-7PM</option>
+                               <option value="6PM-7PM">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp 6PM-7PM</option>
+                                 </select>
+                            </div>
+                    
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="C:\Projects\ep-project\Images\gym.png"  alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
