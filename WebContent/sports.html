@@ -8,7 +8,8 @@
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts.css">
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
     <!-- Main css -->
     <link rel="stylesheet" href="style.css">
    
@@ -59,9 +60,13 @@
 
 </style>
         <div class="navbar">
-            <a href="C:\Projects\ep-project\home.html" >Home</a>
-               <a href="C:\Projects\ep-project\AboutUs.html">About Us</a>
-        </div>
+        <div class="logo">
+                <img
+                    src="Images\logo.png">
+                
+            </div>
+            <a href="home.html" ><span class="material-icons">home</span></a>
+               </div>
     </header>
 <style>
  .h1{
@@ -107,18 +112,18 @@ Playing a sport requires a lot of time and energy. Some people may think this wo
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sports</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <form method="POST" class="register-form" id="register-form" action="Sports.jsp">
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                                <label for="name"><span class="material-icons">face</span></label>
+                                <input type="text" name="name" id="name" placeholder="Name"/>
                             </div>
                             <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                                <label for="email"><span class="material-icons">mail</span></label>
+                                <input type="email" name="email" id="email" placeholder="Email"/>
                             </div>
                              <div class="form-group">
                               <p1>&nbsp&nbsp&nbsp&nbsp Sports</p1>
-                                 <label for="text"><i class="zmdi zmdi-account material-icons-name "></i></label>
+                                 <label for="text"><span class="material-icons">sports_handball</span></label>
                               <select id="games" name="games">
                               <option value="select">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp select</option>
                                <option value="Tennis">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tennis</option>
@@ -133,14 +138,13 @@ Playing a sport requires a lot of time and energy. Some people may think this wo
         
                     
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Let's Play"/>
                             </div>
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="C:\Projects\ep-project\Images\running.gif" alt="sing up image"></figure>
-                        <a href="#" class="signup-image-link">I am already member</a>
-                    </div>
+                        <figure><img src="Images\running.gif" alt="sports image"></figure>
+                         </div>
                 </div>
             </div>
         </section>

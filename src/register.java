@@ -17,16 +17,16 @@ public class register extends HttpServlet
     String email = req.getParameter("email");
     String pass = req.getParameter("pass");
     String re_pass = req.getParameter("re-pass");
-    HttpSession session = req.getSession();
+    /*HttpSession session = req.getSession();
     session.setAttribute("name", name);
     session.setAttribute("email", email);
     session.setAttribute("pass", pass);
-    session.setAttribute("re_pass", re_pass);
+    session.setAttribute("re_pass", re_pass);*/
     try {
     	Connection con = null;
-		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Class.forName("com.mysql.jdbc.Driver");
 		System.out.println("Driver Class Loaded");
-		con = DriverManager.getConnection("jdbc:oracle:thin:@NIHARIKA-PC:1521:XE", "SYSTEM","rahul");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ep_project","root","root");
 		System.out.println("Connection Established");
 		PreparedStatement ps=con.prepareStatement("insert into registration values(?,?,?,?)");  
 				ps.setString(1,name);  

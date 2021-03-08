@@ -8,7 +8,8 @@
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts.css">
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
     <!-- Main css -->
     <link rel="stylesheet" href="style.css">
    
@@ -59,8 +60,13 @@
 
 </style>
         <div class="navbar">
-            <a href="home.html" >Home</a>
-               <a href="AboutUs.html">About Us</a>
+        <div class="logo">
+                <img
+                    src="Images\logo.png">
+                
+            </div>
+            <a href="home.html" ><span class="material-icons">home</span></a>
+               
         </div>
     </header>
 <style>
@@ -110,18 +116,18 @@ Try to notice the sensation of your feet hitting the ground, for example, or the
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Join the Gym</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <form method="POST" class="register-form" id="register-form" action="Gym.jsp">
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                                <label for="name"><span class="material-icons">face</span></i></label>
+                                <input type="text" name="name" id="name" placeholder="Name"/>
                             </div>
                             <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                                <label for="email"><span class="material-icons">mail</span></label>
+                                <input type="email" name="email" id="email" placeholder="Email"/>
                             </div>
                              <div class="form-group">
                               <p1>&nbsp&nbsp&nbsp&nbsp Gender</p1>
-                                 <label for="text"><i class="zmdi zmdi-account material-icons-name "></i></label>
+                                 <label for="text"><span class="material-icons">female</span></label>
                               <select id="gender" name="gender">
                               <option value="select">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp select</option>
                                <option value="Male">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Male</option>
@@ -140,14 +146,13 @@ Try to notice the sensation of your feet hitting the ground, for example, or the
                             </div>
                     
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Join"/>
                             </div>
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="C:\Projects\ep-project\Images\gym.png"  alt="sing up image"></figure>
-                        <a href="#" class="signup-image-link">I am already member</a>
-                    </div>
+                        <figure><img src="Images\gym.png"  alt="sing up image"></figure>
+                        </div>
                 </div>
             </div>
         </section>

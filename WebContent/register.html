@@ -7,13 +7,23 @@
     <title>TeensTree</title>
     <script defer src=script.js></script>
     <!-- Font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
+    <div class="navbar">
+            <div class="logo">
+                <img
+                    src="Images\logo.png">
+                
+            </div>
+            <a href="index.html"><span class="material-icons">home</span></a>
+            
+        </div>
+        <div class="main">
         <!-- Sign up form -->
         
         <section class="signup">
@@ -23,33 +33,33 @@
                         <h2 class="form-title">Register</h2>
                         <form id="form" name="form" method="post" action="register" onSubmit="validateSignup(); return false">
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                                <label for="name"><span class="material-icons">face</span></label>
+                                <input type="text" name="name" id="name" placeholder="Name"/>
                                 <div class="error" id="nameErr"></div>
                             </div>
                             <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                                <label for="email"><span class="material-icons">mail</span></label>
+                                <input type="email" name="email" id="email" placeholder="Email"/>
                                 <div class="error" id="emailErr"></div>
                             </div>
                             <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <label for="pass"><span class="material-icons">password</span></label>
                                 <input type="password" name="pass" id="pass" placeholder="Password"/>
                                 <div class="error" id="passErr"></div>
                             </div>
                             <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                                <label for="re-pass"><span class="material-icons">lock</span></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat Password"/>
                                 <div class="error" id="re_passErr"></div>
                             </div>
                           <div class="form-group">
-                                <input type="submit"/>
+                                <input type="submit" value="Register"/>
                             </div>
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="C:\Projects\ep-project\signin-image.jpg" alt="sign up image"></figure>
-                        <a href="#" class="signup-image-link">I am already member</a>
+                        <figure><img src= "Images/login.jpg" alt="sign up image"></figure>
+                        <a href="login.html" class="signup-image-link">I already have an account</a>
                     </div>
                 </div>
             </div>

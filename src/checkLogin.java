@@ -24,9 +24,9 @@ public class checkLogin extends HttpServlet
     
     try {
     	Connection con = null;
-		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Class.forName("com.mysql.jdbc.Driver");
 		System.out.println("Driver Class Loaded");
-		con = DriverManager.getConnection("jdbc:oracle:thin:@NIHARIKA-PC:1521:XE", "SYSTEM","rahul");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ep_project","root","root");
 		System.out.println("Connection Established");
 		 PreparedStatement pstmt = con.prepareStatement("select * from registration where name=? and pass=?");
 		  pstmt.setString(1,name);

@@ -8,7 +8,8 @@
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts.css">
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
     <!-- Main css -->
     <link rel="stylesheet" href="style.css">
    
@@ -59,8 +60,13 @@
 
 </style>
         <div class="navbar">
-            <a href="home.html" >Home</a>
-               <a href="AboutUs.html">About Us</a>
+        <div class="logo">
+                <img
+                    src="Images\logo.png">
+                
+            </div>
+            <a href="home.html" ><span class="material-icons">home</span></a>
+               
         </div>
     </header>
 <style>
@@ -103,32 +109,33 @@ Yoga studios typically don't have mirrors. This is so people can focus their awa
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">Register for the class</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <h2 class="form-title">Register for Yoga Class</h2>
+                        <form method="POST" class="register-form" id="register-form" action="Yoga.jsp">
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="name"><span class="material-icons">face</span></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>
                             </div>
                             <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <label for="email"><span class="material-icons">mail</span></label>
                                 <input type="email" name="email" id="email" placeholder="Your Email"/>
                             </div>
                             <div class="form-group">
-                                 <label for="time"><i class="zmdi zmdi-calendar" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp</i></label>
+                            <p1>&nbsp&nbsp&nbsp&nbsp Timings</p1>
+                                 <label for="time"><span class="material-icons">event</span></label>
                               <select id="time" name="time">
-                              <option value="select">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp select</option>
+                              <option value="select">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Select &nbsp  </option>
                                <option value=" 5 PM-6 PM" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 5PM-7PM</option>
                                <option value="6PM-7PM">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 6AM-7AM</option>
                                  </select>
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Join"/>
                             </div>
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="C:\Projects\ep-project\Images\logo.png" alt="sing up image"></figure>
-                        <a href="#" class="signup-image-link">I am already member</a>
+                        <figure><img src="Images\yoga.png" alt="yoga image"></figure>
+                        
                     </div>
                 </div>
             </div>

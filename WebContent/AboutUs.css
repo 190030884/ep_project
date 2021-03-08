@@ -1,7 +1,7 @@
 *{
   margin:0;
   padding: 0%;
-  font-family:'Times New Roman', Times, serif;
+  font-family:Cambria,Georgia,serif; 
 }
 header{
   background-color: rgba(231, 226, 226, 0.904);
@@ -74,7 +74,7 @@ header{
 
 .footer-distributed h3{
   color:  #ffffff;
-  font: normal 36px 'Cookie', cursive;
+  font: normal 36px 'Cambria', cursive;
   margin: 0;
 }
 
@@ -197,13 +197,13 @@ header{
 }
 
 .wrapper h1{
-  font-family:'Times New Roman', Times, serif;
+  font-family:Cambria,Georgia,serif; 
   font-size: 40px;
   margin-bottom: 60px;
   text-align: center;
 }
 .h1{
-  font-family:'Times New Roman', Times, serif;
+  font-family:Cambria,Georgia,serif; 
   font-size: 40px;
   margin-bottom: 60px;
   text-align: center;
@@ -218,7 +218,7 @@ header{
 }
 
 .team .team_member{
-  background: #fff;
+  background: #d9d9d9;
   margin: 5px;
   margin-bottom: 50px;
   width: 300px;
