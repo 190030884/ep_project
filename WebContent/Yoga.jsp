@@ -16,10 +16,10 @@ try
 	  pstmt.setString(1,name);
 	  pstmt.setString(2,email);
 	  pstmt.setString(3,time);
-	  pstmt.executeUpdate();
+	  
 	  int i=pstmt.executeUpdate();  
 				if(i>0)  
-				out.print("Thank you for joining in Yoga classes");  
+				response.sendRedirect("home.html");
 				
 }
 catch(Exception e)
@@ -28,3 +28,4 @@ catch(Exception e)
 }
 
 %>
+<script>window.prompt("Joined the Yoga Class")</script>

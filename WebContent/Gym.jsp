@@ -18,15 +18,15 @@ try
 	  pstmt.setString(2,email);
 	  pstmt.setString(3,gender);
 	  pstmt.setString(4,time);
-	  pstmt.executeUpdate();
+	  
 	  int i=pstmt.executeUpdate();  
 				if(i>0)  
-				out.print("Thank you for joining in the Gym");  
+				response.sendRedirect("home.html");  
 				
 }
 catch(Exception e)
 {
 	out.println(e);
 }
-
 %>
+<script>window.prompt("Joined the Gym")</script>

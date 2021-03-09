@@ -18,10 +18,10 @@ try
 	  pstmt.setString(2,email);
 	  pstmt.setString(3,games);
 	  
-	  pstmt.executeUpdate();
+	  
 	  int i=pstmt.executeUpdate();  
 				if(i>0)  
-				out.print("Get out of your room. It's time to play");  
+				response.sendRedirect("home.html");
 				
 }
 catch(Exception e)
@@ -30,3 +30,4 @@ catch(Exception e)
 }
 
 %>
+<script>window.prompt("It's time to play!")</script>

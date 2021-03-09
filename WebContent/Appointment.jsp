@@ -20,10 +20,10 @@ try
 	  pstmt.setString(3,date);
 	  pstmt.setString(4,text);
 	  
-	  pstmt.executeUpdate();
+	  
 	  int i=pstmt.executeUpdate();  
 				if(i>0)  
-				out.print("Your appointment is booked.");  
+				response.sendRedirect("home.html");  
 				
 }
 catch(Exception e)
@@ -32,3 +32,4 @@ catch(Exception e)
 }
 
 %>
+<script>window.prompt("Appointment Booked")</script>

@@ -69,7 +69,7 @@
                 
             </div>
             <a href="home.html" ><span class="material-icons">home</span></a>
-               
+               <a href="viewblogs.html" >View Blogs</a>
         </div>
     
     </header>
@@ -82,15 +82,15 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Create your Blog</h2>
-                        <form method="validateSignUpForm()" class="register-form" id="register-form">
+                        <form method="validateSignUpForm()" class="register-form" id="register-form" action="CreateBlog.jsp">
                             <div class="form-group">
                                 <label for="name"><span class="material-icons">title</span></label>
-                                <input type="text" name="name" id="name" placeholder="Title"/>
+                                <input type="text" name="tite" id="title" placeholder="Title"/>
                             </div>
                 
                             <div class="form-group">
                                 <label for="text"><span class="material-icons">topic</span></label>
-                                <input type="text" name="text" id="text" placeholder="Topic"/>
+                                <input type="text" name="topic" id="topic" placeholder="Topic"/>
                             </div>
                             <div class="form-group">
                                 <label for="text"><span class="material-icons">create</span></label>
@@ -103,7 +103,7 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="Images\blogs.jpg" alt="blogs image"></figure>
+                        <figure><img src="blogs.jpg" alt="blogs image"></figure>
                     </div>
                 </div>
             </div>
