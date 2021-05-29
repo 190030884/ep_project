@@ -63,10 +63,17 @@
         <div class="logo">
                 <img
                     src="Images\logo.png">
-                
+   
             </div>
+            <a href="index.html" ><span class="material-icons">power_settings_new</span></a>
             <a href="home.html" ><span class="material-icons">home</span></a>
-               
+            <a href="yoga.html">Yoga</a>
+             <a href="gym.html">Gym</a>
+              <a href="sports.html">Sports</a>
+               <a href="createblog.html">Create Blog</a>
+               <a href="ViewBlogs.jsp">View Blogs</a>
+               <a href="medicalrecords.html">Medical Records</a>   
+               <a href="viewrecords.html">View records</a>
         </div>
     
     </header>
@@ -78,15 +85,15 @@
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">Consult the Doctor</h2>
+                        <h2 class="form-title">Book your Appointment</h2>
                         <form method="validateSignUpForm()" class="register-form" id="register-form" action="Appointment.jsp">
                             <div class="form-group">
                                 <label for="name"><span class="material-icons">face</span></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>
                             </div>
                             <div class="form-group">
-                                <label for="email"><span class="material-icons">mail</span></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                                <label for="email"><span class="material-icons">email</span></label>
+                                <input type="email" name="email" id="email" placeholder="Your e-mail"/>
                             </div>
                             <div class="form-group">
                                 <label for="text"><span class="material-icons">event</span></label>
@@ -94,10 +101,16 @@
                             </div>
                             <div class="form-group">
                                 <label for="text"><span class="material-icons">subject</span></label>
-                                <input type="text" name="text" id="text" placeholder="Enter the Subject"/>
+                                <input type="text" name="text" id="text" placeholder="Your Subject"/>
                             </div>
+                            <script>
+			              function appointment() {
+			                alert("Appointment Boooked!");
+			              }
+			              </script>
+			               
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Book my appointment"/>
+                                <input type="submit" onclick="appointment();" name="signup" id="signup" class="form-submit" value="Book my appointment"/>
                             </div>
                         </form>
                     </div>

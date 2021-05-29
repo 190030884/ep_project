@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TeensTree</title>
+
+    <!-- Font Icon -->
+    
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+    <!-- Main css -->
+     
+    
+   <link rel="stylesheet" href="style.css">
+   
+   <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+  <header>
+<style>
+
+.navbar {
+    float:right;
+    overflow: hidden;
+    background-color: grey;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    border-radius: 3px;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .logo img         {
+    float:left;
+    width:50px;
+    height:auto;
+  }
+  .logo span   {
+    display: inline-block;
+  }
+  .main{
+      max-width:1100px;
+      margin:auto
+  }
+
+</style> -->
+        <div class="navbar">
+        <div class="logo">
+                <img
+                    src="Images\logo.png">
+                
+            </div>
+            <a href="index.html" ><span class="material-icons">power_settings_new</span></a>
+            <a href="adminhome.html" ><span class="material-icons">home</span></a>
+            
+            
+               
+               <a href="AdminViewBlogs.jsp">View Blogs</a>
+               
+               <a href="AdminViewUsers.jsp">View Users</a>
+            
+        </div>
+    
+    </header>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Create your Blog</h2>
+                        <form method="validateSignUpForm()" class="register-form" id="register-form" action="AdminCreateBlog.jsp">
+                            <div class="form-group">
+                                <label for="text"><span class="material-icons">face</span></label>
+                                <input type="text" name="name" id="name" placeholder="Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="text"><span class="material-icons">topic</span></label>
+                                <input type="text" name="topic" id="topic" placeholder="Topic"/>
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="text"><span class="material-icons">create</span></label>
+                                <input type="text" name="text" id="text" placeholder="Write here"/>
+                            </div>
+                            
+                            <script>
+			              function blogposted() {
+			                alert("Blog Posted Successfully!");
+			              }
+			              </script>
+			                            <div class="form-group form-button">
+			                                <input type="submit" name="postblog" onclick="blogposted();" id="postblog" class="form-submit" value="Post my Blog!"/>
+			                            </div>
+			            </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="blogs.jpg" alt="blogs image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    <script src="jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

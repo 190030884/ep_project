@@ -24,4 +24,36 @@
   <servlet-name>remarks</servlet-name>
   <url-pattern>/remarks</url-pattern>
   </servlet-mapping>
+  <servlet>
+  <servlet-name>checkAdminLogin</servlet-name>
+  <servlet-class>checkAdminLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>checkAdminLogin</servlet-name>
+  <url-pattern>/checkAdminLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>DeleteBlogs</servlet-name>
+  <servlet-class>DeleteBlogs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteBlogs</servlet-name>
+  <url-pattern>/DeleteBlogs</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>AdminViewUsers</servlet-name>
+  <servlet-class>AdminViewUsers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AdminViewUsers</servlet-name>
+  <url-pattern>/AdminViewUsers</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>AdminDeleteUsers</servlet-name>
+  <servlet-class>AdminDeleteUsers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AdminDeleteUsers</servlet-name>
+  <url-pattern>/AdminDeleteUsers</url-pattern>
+  </servlet-mapping>
 </web-app>

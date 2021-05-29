@@ -8,7 +8,7 @@
 
     <!-- Font Icon -->
     
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet">
     <!-- Main css -->
      
@@ -68,8 +68,17 @@
                     src="Images\logo.png">
                 
             </div>
+            <a href="index.html" ><span class="material-icons">power_settings_new</span></a>
             <a href="home.html" ><span class="material-icons">home</span></a>
-               <a href="viewblogs.html" >View Blogs</a>
+            
+            <a href="appointment.html" >Appointments</a>
+            <a href="yoga.html">Yoga</a>
+             <a href="gym.html">Gym</a>
+              <a href="sports.html">Sports</a>
+               <a href="ViewBlogs.jsp">View Blogs</a>
+               <a href="medicalrecords.html">Medical Records</a>
+               <a href="viewrecords.html">View records</a>
+            
         </div>
     
     </header>
@@ -84,23 +93,28 @@
                         <h2 class="form-title">Create your Blog</h2>
                         <form method="validateSignUpForm()" class="register-form" id="register-form" action="CreateBlog.jsp">
                             <div class="form-group">
-                                <label for="name"><span class="material-icons">title</span></label>
-                                <input type="text" name="tite" id="title" placeholder="Title"/>
+                                <label for="text"><span class="material-icons">face</span></label>
+                                <input type="text" name="name" id="name" placeholder="Name"/>
                             </div>
-                
                             <div class="form-group">
                                 <label for="text"><span class="material-icons">topic</span></label>
                                 <input type="text" name="topic" id="topic" placeholder="Topic"/>
                             </div>
+                
                             <div class="form-group">
                                 <label for="text"><span class="material-icons">create</span></label>
                                 <input type="text" name="text" id="text" placeholder="Write here"/>
                             </div>
-                             
-                            <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Post my Blog!"/>
-                            </div>
-                        </form>
+                            
+                            <script>
+			              function blogposted() {
+			                alert("Blog Posted Successfully!");
+			              }
+			              </script>
+			                            <div class="form-group form-button">
+			                                <input type="submit" name="postblog" onclick="blogposted();" id="postblog" class="form-submit" value="Post my Blog!"/>
+			                            </div>
+			            </form>
                     </div>
                     <div class="signup-image">
                         <figure><img src="blogs.jpg" alt="blogs image"></figure>

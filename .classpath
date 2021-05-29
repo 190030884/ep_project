@@ -11,5 +11,11 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/Jar Files/mysql-connector-java-5.1.23-bin.jar"/>
 	<classpathentry kind="lib" path="C:/Jar Files/mysql-connector-java-8.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/Jar Files/apache-commons.jar"/>
+	<classpathentry kind="lib" path="C:/Jar Files/commons-fileupload-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Jar Files/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Jar Files/cos.jar"/>
+	<classpathentry kind="lib" path="C:/Jar Files/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Jar Files/multipartrequest.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

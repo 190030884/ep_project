@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TeensTree</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+    <!-- Main css -->
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+  <header>
+<style>
+
+.navbar {
+    float:right;
+    overflow: hidden;
+    background-color: grey;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    border-radius: 3px;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .logo img         {
+    float:left;
+    width:50px;
+    height:auto;
+  }
+  .logo span   {
+    display: inline-block;
+  }
+  .main{
+      max-width:1100px;
+      margin:auto
+  }
+
+</style>
+        <div class="navbar">
+        <a href="index.html" ><span class="material-icons">power_settings_new</span></a>
+            <a href="home.html" ><span class="material-icons">home</span></a>
+            
+            <a href="appointment.html" >Appointments</a>
+            <a href="yoga.html">Yoga</a>
+             <a href="gym.html">Gym</a>
+              <a href="sports.html">Sports</a>
+               <a href="createblog.html">Create Blog</a>
+               <a href="ViewBlogs.jsp">View Blogs</a>
+               <a href="viewrecords.html">View records</a>
+                       </div>
+    
+    </header>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">MEDICAL RECORDS</h2>
+                        <form action="MedicalRecords.jsp" encrypt="multipart/form-data"
+                        method="validateSignUpForm()" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><span class="material-icons">title</span></label>
+                                <input type="text" name="name" id="name" placeholder="Title"/>
+
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="text"><span class="material-icons">create</span></label>
+                                <input type="text" name="text" id="text" placeholder="Details if any"/>
+                            </div>
+                             <div class="form-group">
+                                <label for="file"><span class="material-icons">image</span></label>
+                                <input type="file" name="imagepath" id="imagepath" placeholder="Upload Image"/>
+                            </div>
+                            <script>
+                    function record() {
+                      alert("Record Stored");
+                    }
+                    </script>
+                            <div class="form-group form-button">
+                                <input type="submit" onclick="record();" id="myBtn" name="signup" id="signup" class="form-submit" value="Upload"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="Images/medicalrecords.png" alt="sing up image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    
+    <script src="jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
